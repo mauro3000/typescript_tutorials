@@ -161,3 +161,20 @@ const errorBag: ErrorContainer = {
     email: 'Not a valid email!',
     username: 'Must start with a capital character!'
 }
+
+
+/* FUNCTION OVERLOADS */
+
+function addFn(a: number, b: number): number
+function addFn(a: string, b: string): string
+function addFn(a: Combinable, b: Combinable){
+    if(typeof a === 'string' || typeof b === 'string'){
+        return a.toString + b.toString();
+    }
+    return a + b;
+}
+
+const res1 = addFn(1, 2);
+res1.toFixed;
+const res2 = addFn('a', 'b');
+res2.toUpperCase();
