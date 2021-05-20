@@ -178,3 +178,13 @@ const res1 = addFn(1, 2);
 res1.toFixed;
 const res2 = addFn('a', 'b');
 res2.toUpperCase();
+
+/* OPTIONAL CHAINING */
+
+const fetchedUserData = {
+    id: 'u1',
+    name: 'Mauro',
+    job: {title: 'Dev', description: 'Web developer'}
+}
+
+console.log(fetchedUserData?.job?.title);
