@@ -149,3 +149,15 @@ userInputElement.value = "Hello";
 // Alternative 2
 const userInputElement2 = document.getElementById('user-input')! as HTMLInputElement;
 userInputElement2.value = "Hello";
+
+
+/* INDEX PROPERTIES */
+
+interface ErrorContainer {
+    [prop: string]: string
+}
+
+const errorBag: ErrorContainer = {
+    email: 'Not a valid email!',
+    username: 'Must start with a capital character!'
+}
