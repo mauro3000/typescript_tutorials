@@ -136,3 +136,10 @@ function moveAnimal(animal: Animal){
 }
 
 moveAnimal({type: 'bird', flyingSpeed: 10});
+
+
+/* TYPE CASTING */
+
+const paragraph = document.getElementById('message-output');
+const input = document.getElementById('user-input');
+
