@@ -141,5 +141,11 @@ moveAnimal({type: 'bird', flyingSpeed: 10});
 /* TYPE CASTING */
 
 const paragraph = document.getElementById('message-output');
-const input = document.getElementById('user-input');
 
+// Alternative 1
+const userInputElement = <HTMLInputElement>document.getElementById('user-input')!; // "!" to ensure it is not null
+userInputElement.value = "Hello";
+
+// Alternative 2
+const userInputElement2 = document.getElementById('user-input')! as HTMLInputElement;
+userInputElement2.value = "Hello";
