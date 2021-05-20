@@ -188,3 +188,16 @@ const fetchedUserData = {
 }
 
 console.log(fetchedUserData?.job?.title);
+
+
+/* NULLISH COALESCING */
+
+const userInput = '';
+
+const storedData1 = userInput || 'Default value';
+const storedData2 = userInput ?? 'Default value';
+
+console.log("storedData1: " + storedData1);
+
+// with nullish coalescing ("??") it checks only if null or undefined   
+console.log("storedData2: " + storedData2);
